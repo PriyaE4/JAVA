@@ -1,0 +1,23 @@
+// Write a java program to find area of rectangle, square and circle using method overloading
+
+
+class Area {
+    public void area(int length, int breadth){
+        int area = length * breadth;
+        System.out.println("The area of the rectangle is "+area);
+    }
+    public void area(int sideLength){
+        int area = (int)Math.pow(sideLength,2);
+        System.out.println("The area of the square is "+area);
+    }
+    public void area(double radius){
+        double area = 3.14 * radius*radius;
+        System.out.println("The area of the circle is "+area);
+    }
+    public static void main(String[] args) {
+        Area a = new Area();
+        a.area(20,50);
+        a.area(40);
+        a.area(16);
+    }
+}
