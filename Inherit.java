@@ -9,6 +9,7 @@ class A{
 		System.out.println("In A parameterized.");
 	}
 }
+//B is child A is Parent
 class B extends A{
 	public B() {
 		super();
